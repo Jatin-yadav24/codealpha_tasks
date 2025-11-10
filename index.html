@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery (Nature, City, Animals)</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="active" onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('nature')">Nature</button>
+    <button onclick="filterGallery('city')">City</button>
+    <button onclick="filterGallery('animals')">Animals</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+
+    <!-- Nature -->
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&auto=format" class="nature" alt="Nature 1" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format" class="nature" alt="Nature 2" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&auto=format" class="nature" alt="Nature 3" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&auto=format" class="nature" alt="Nature 4" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&auto=format" class="nature" alt="Nature 5" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&auto=format" class="nature" alt="Nature 6" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=600&auto=format" class="nature" alt="Nature 7" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=600&auto=format" class="nature" alt="Nature 8" loading="lazy">
+
+    <!-- City -->
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=600&auto=format" class="city" alt="City 1" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?w=600&auto=format" class="city" alt="City 2" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&auto=format" class="city" alt="City 3" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=600&auto=format" class="city" alt="City 4" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=600&auto=format" class="city" alt="City 5" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=600&auto=format" class="city" alt="City 6" loading="lazy">
+
+    <!-- Animals -->
+    <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8?w=600&auto=format" class="animals" alt="Panda eating bamboo" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600&auto=format" class="animals" alt="Elephant family" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?w=600&auto=format" class="animals" alt="Fox on snow" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=600&auto=format" class="animals" alt="Rabbit in grass" loading="lazy">
+
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="close" onclick="closeLightbox()">✕</button>
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <img id="lightbox-img" src="" alt="Lightbox Image">
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
